@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TelefonePipe implements PipeTransform {
 
   transform(value: string): string {
-    if (value && value.length === 8) {
+    if (value && value.length === 8){
       return `${value.substr(0, 4)}-${value.substr(4, 4)}`;
     }
     else if (value && value.length === 10) {
